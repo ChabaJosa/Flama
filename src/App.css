@@ -433,6 +433,7 @@ h6 {
   font-size: larger;
 }
 
+/* This is to use an image as background */
 .balloon-background {
   animation: fadein 3s;
   color: rgba(0, 0, 0, 0.2);
@@ -440,6 +441,11 @@ h6 {
   background-clip: text;
   -webkit-background-clip: text;
   font-family: "Playfair Display", serif; /* font-size: 7.5rem; */
+}
+
+.coral-background{
+  background-color: #EDC9AF;
+
 }
 
 .carousel {

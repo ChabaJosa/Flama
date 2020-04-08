@@ -14,10 +14,10 @@ export default function home() {
         </h1>
       </div>   
       {/* <SecondaryTitle text={"About Flama"}/> */}
-      <div className="row">
+      <div className="row coral-background">
             <div className="col-10 mx-auto my-2 text-center text-title">
-                <h1 className="text-capitalize font-weight-bold balloon-background">
-                    About Flama
+                <h1 className="text-capitalize font-weight-bold ">
+                    Our Story
                 </h1>
             </div>
         </div>
