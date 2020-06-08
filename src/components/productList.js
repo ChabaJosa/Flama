@@ -5,10 +5,6 @@ import {ProductConsumer}    from "../context"
 
 export default class ProductList extends Component {
 
-    state= {
-        products: []
-    }
-
     render() {
         return (
             <>
@@ -18,8 +14,10 @@ export default class ProductList extends Component {
                             <Title name="Our" title="Products" />
                             <div className="row">
                                 <ProductConsumer>
-                                    {(value) => {
-                                        return <h1>{value}</h1>
+                                    {value => {
+                                        return value.products.map( product => {
+                                            return <Product key={product.id} product={product}  />
+                                        })
                                     }}
                                 </ProductConsumer>
                             </div>
