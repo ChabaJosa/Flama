@@ -5,6 +5,7 @@ import Details                    from "./components/details"
 import ProductList                from "./components/productList"
 import Cart                       from "./components/cart"
 import DefaultScreen              from "./components/defaultScreen"
+import Modal                      from "./components/modal"
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css" 
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/cart"     component={Cart}          ></Route>
             <Route                  component={DefaultScreen} ></Route>
         </Switch>
+        <Modal />
     </>
   );
 }
