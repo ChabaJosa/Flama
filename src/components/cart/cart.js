@@ -1,12 +1,33 @@
-import React, { Component } from 'react'
-import Title                from "../title"
+import React, { Component }     from "react";
+import Title                    from "../title";
+import CartColumns              from "./cartColumns";
+import EmptyCart                from "./emptyCart";
+import { ProductConsumer }      from "../../context";
+import CartList                 from "./cartList"
 
 export default class Cart extends Component {
-    render() {
-        return (
-            <section>
-                <Title name="your" title="cart" />
-            </section>
-        )
-    }
+  render() {
+    return (
+      <section>
+        <ProductConsumer>
+          {(value) => {
+            //  could have also used destructuring as follows
+            //  const {cart} = value
+
+            if (value.cart.length !== 0) {
+              return (
+                <>
+                  <Title name="your" title="cart" />
+                  <CartColumns />
+                  <CartList value={value} />
+                </>
+              );
+            } else {
+              return <EmptyCart />;
+            }
+          }}
+        </ProductConsumer>
+      </section>
+    );
+  }
 }
