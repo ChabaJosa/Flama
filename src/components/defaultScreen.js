@@ -16,8 +16,6 @@ export default class DefaultScreen extends Component {
                                 {this.props.location.pathname}
                             </span>{" "}
                         </h3>
-
-
                     </div>
                 </div>
             </div>
