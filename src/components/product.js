@@ -9,10 +9,11 @@ export default class Product extends Component {
     render() {
 
         const {id, title, img, price, inCart} = this.props.product
-
+        let md;
+        id === 4 || id === 5 ?  md = 6: md = 4
 
         return (
-            <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-33 my-3">
+            <ProductWrapper className={`col-9 mx-auto col-md-${md} col-lg-33 my-3`} >
                 <div className="card">
                     <ProductConsumer>
                     {(value) => (
