@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../logo.png";
 import styled from "styled-components";
 import { ButtonContainer } from "./button";
 
@@ -13,12 +12,24 @@ export default class Navbar extends Component {
             https://www.iconfinder.com/Makoto_msk  */}
         <Link to="">
           {/* <img src={Logo} alt="store" className="navbar brand"></img> */}
-          <div class="flame-wrapper">
-            <div class="flame red"></div>
-            <div class="flame orange"></div>
-            <div class="flame gold"></div>
-            <div class="flame white"></div>
+          <div class="fire">
+            <div class="fire-left">
+              <div class="main-fire"></div>
+              <div class="particle-fire"></div>
+            </div>
+            <div class="fire-main">
+              <div class="main-fire"></div>
+              <div class="particle-fire"></div>
+            </div>
+            <div class="fire-right">
+              <div class="main-fire"></div>
+              <div class="particle-fire"></div>
+            </div>
+            <div class="fire-bottom">
+              <div class="main-fire"></div>
+            </div>
           </div>
+          {" "}
         </Link>
 
         <ul className="navbar-nav align-items-center">
