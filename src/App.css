@@ -339,9 +339,9 @@ body {
   animation: fireAnimation 1s ease-in-out infinite alternate;
   -moz-animation: fireAnimation 1s ease-in-out infinite alternate;
   -webkit-animation: fireAnimation 1s ease-in-out infinite alternate;
-  -webkit-perspective: 1000;
-  -webkit-backface-visibility: hidden;
   -o-animation: fireAnimation 1s ease-in-out infinite alternate;
+  -webkit-perspective: 1000;
+  /* -webkit-backface-visibility: hidden; */
 }
 
 @keyframes fireAnimation
