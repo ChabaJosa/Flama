@@ -7,7 +7,7 @@ export default function title({name, title}) {
                 <h1 className="text-capitalize font-weight-bold">
                     {name}
                     <br/>
-                    <strong className="text-blue">{title}</strong>
+                    <strong className="text-orange">{title}</strong>
                 </h1>
             </div>
         </div>

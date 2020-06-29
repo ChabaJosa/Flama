@@ -8,7 +8,6 @@ export default function home() {
                 <h1 className="titleText titleAnimation" >Welcome</h1>
                 <h1 className="titleText titleAnimation" >to</h1>
                 <h1 className="titleText" id="FlamaTitle" > Flama</h1>
-
             </div>
             <ProductList />
         </>

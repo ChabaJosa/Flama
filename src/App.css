@@ -4,7 +4,7 @@
   --mainWhite: #f3f3f3;
   /* --mainDark:   #232528; */
   --mainDark: #000000;
-  --mainYellow: #ffa400;
+  --mainYellow: #ff7800;
 }
 
 body {
@@ -21,6 +21,10 @@ body {
 
 .text-blue {
   color: var(--mainBlue);
+}
+
+.text-orange{
+  color: var(--mainYellow)
 }
 
 .text-bright {
@@ -265,6 +269,8 @@ body {
   text-align: right;
   font-size: 4rem;
   font-family: "Permanent Marker", cursive;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .titleAnimation{
