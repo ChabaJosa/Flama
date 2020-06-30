@@ -75,6 +75,7 @@ const ProductWrapper = styled.div`
     .card{
         border-color: transparent;
         transition: all 0.5s linear;
+        height: 30rem;
     }
     .card-footer{
         background: transparent;
