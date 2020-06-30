@@ -6,7 +6,7 @@ https://www.iconfinder.com/Makoto_msk */
 export const storeProducts = [
   {
     id: 1,
-    title: "Google Pixel - Black",
+    title:"Awesome Candle #1",
     img: "img/product1.png",
     price: 10,
     company: "GOOGLE",
@@ -18,7 +18,7 @@ export const storeProducts = [
   },
   {
     id: 2,
-    title: "Samsung S7",
+    title:"Awesome Candle #2",
     img: "img/product2.png",
     price: 16,
     company: "SAMSUNG",
@@ -30,7 +30,7 @@ export const storeProducts = [
   },
   {
     id: 3,
-    title: "HTC 10 - Black",
+    title:"Awesome Candle #3",
     img: "img/product3.png",
     price: 8,
     company: "htc",
@@ -42,7 +42,7 @@ export const storeProducts = [
   },
   {
     id: 4,
-    title: "HTC 10 - White",
+    title:"Awesome Candle #4",
     img: "img/product4.png",
     price: 18,
     company: "htc",
@@ -54,7 +54,7 @@ export const storeProducts = [
   },
   {
     id: 5,
-    title: "HTC Desire 626s",
+    title:"Awesome Candle #5",
     img: "img/product5.png",
     price: 24,
     company: "htc",
@@ -66,7 +66,7 @@ export const storeProducts = [
   },
   {
     id: 6,
-    title: "Vintage Iphone",
+    title:"Awesome Candle #",
     img: "img/product6.png",
     price: 17,
     company: "apple",
@@ -78,7 +78,7 @@ export const storeProducts = [
   },
   {
     id: 7,
-    title: "Iphone 7",
+    title:"Awesome Candle #6",
     img: "img/product7.png",
     price: 30,
     company: "apple",
@@ -90,7 +90,7 @@ export const storeProducts = [
   },
   {
     id: 8,
-    title: "Smashed Iphone",
+    title:"Awesome Candle #7",
     img: "img/product8.png",
     price: 2,
     company: "apple",
@@ -104,7 +104,7 @@ export const storeProducts = [
 
 export const detailProduct = {
   id: 1,
-  title: "Google Pixel - Black",
+  title: "Awesome Candle #1",
   img: "img/product1.png",
   price: 10,
   company: "google",
