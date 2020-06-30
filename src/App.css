@@ -266,7 +266,7 @@ body {
 
 .titleText {
   color: var(--mainWhite);
-  text-align: right;
+  text-align: center;
   font-size: 4em;
   font-family: "Permanent Marker", cursive;
   margin: 1rem;
