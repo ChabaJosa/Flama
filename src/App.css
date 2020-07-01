@@ -257,11 +257,11 @@ body {
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: self-start;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./candles-heart.jpg");
+    url("./balloon.jpg");
 }
 
 .titleText {
