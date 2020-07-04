@@ -10,13 +10,13 @@ export default function bootstrapFooter() {
               <h3>Site Map</h3>
               <ul className="list-unstyled three-column">
                 <li>Home</li>
-                <li>Services</li>
+                <li>Products</li>
                 <li>About</li>
-                <li>Code</li>
+                {/* <li>Code</li>
                 <li>Design</li>
                 <li>Host</li>
                 <li>Contact</li>
-                <li>Company</li>
+                <li>Company</li> */}
               </ul>
               <ul className="list-unstyled socila-list">
                 <li>
@@ -40,7 +40,7 @@ export default function bootstrapFooter() {
               </ul>
             </div>
             <div className="col-lg-4 col-md-6">
-              <h3>latest Articles</h3>
+              <h3>Latest Articles</h3>
               <div className="media">
                 <a href="/" className="pull-left">
                   <img
@@ -88,7 +88,7 @@ export default function bootstrapFooter() {
               </div>
             </div>
             <div className="col-lg-4">
-              <h3>Our Work</h3>
+              <h3>Candles of the Month</h3>
               <img
                 className="img-thumbnail"
                 src="http://placehold.it/150x100"
@@ -113,7 +113,7 @@ export default function bootstrapFooter() {
           </div>
         </div>
         <div className="copyright text-center">
-          Copyright © 2017 <span>Your Template Name</span>
+          Copyright © 2020 <span>Flama</span>
         </div>
       </footer>
     </>

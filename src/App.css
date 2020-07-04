@@ -459,9 +459,17 @@ body {
 
 }
 
-.w-100{
+.carouselImage{
+  /* -webkit-text-stroke: 1px black; */
+  /* -webkit-filter: blur(2px); 
+  -moz-filter: blur(2px); 
+  -o-filter: blur(2px); 
+  -ms-filter: blur(2px); 
+  filter: blur(2px);  */
+  opacity: 0.5;
   max-height: 60vh;
 }
+
 
 /* What follows is the footer styling from: https://colorlib.com/wp/bootstrap-footer/*/
 
@@ -542,4 +550,5 @@ footer .copyright span {
 .media-body {
   margin: 0 1rem !important;
 }
+
 

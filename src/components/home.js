@@ -14,7 +14,7 @@ export default function home() {
         </h1>
       </div>   
       
-      <SecondTitle name="Flama" title="Products" />
+      <SecondTitle name="About" title="Flama" />
       <LandingCarousel />  
       <ProductList />
       <BootstrapFooter />
