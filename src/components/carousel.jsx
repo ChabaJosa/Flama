@@ -16,7 +16,7 @@ export default function LandingCarousel() {
     <>
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
-          <div style={{background:"rgba(0, 0, 0, 0.8)"}}>
+          <div style={{ background: "rgba(0, 0, 0, 0.8)" }}>
             <img
               className="d-block w-100 carouselImage"
               src={SomePic1}
@@ -24,12 +24,12 @@ export default function LandingCarousel() {
             />
           </div>
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>First thing</h3>
+            <p>Flama stands for this</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <div style={{background:"rgba(0, 0, 0, 0.8)"}}>
+          <div style={{ background: "rgba(0, 0, 0, 0.8)" }}>
             <img
               className="d-block w-100 carouselImage"
               src={SomePic2}
@@ -38,12 +38,12 @@ export default function LandingCarousel() {
           </div>
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Second thing</h3>
+            <p>Flama stands for this</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <div style={{background:"rgba(0, 0, 0, 0.8)"}}>
+          <div style={{ background: "rgba(0, 0, 0, 0.8)" }}>
             <img
               className="d-block w-100 carouselImage"
               src={SomePic3}
@@ -52,10 +52,8 @@ export default function LandingCarousel() {
           </div>
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h3>Third thing</h3>
+            <p>Flama stands for this</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
