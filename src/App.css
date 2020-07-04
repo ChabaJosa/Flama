@@ -8,10 +8,15 @@
 }
 
 body {
-  font-family: "Oswald", sans-seif !important;
-  background: var(--mainWhite) !important;
-  color: var(--mainDark) !important;
-}
+  font-family: 'Chivo', sans-serif;
+  font-weight: 300;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+ }
 
 .text-title {
   font-family: "Permanent Marker", cursive;
@@ -268,7 +273,7 @@ body {
   color: var(--mainWhite);
   text-align: center;
   font-size: 4em;
-  font-family: "Permanent Marker", cursive;
+  /* font-family: "Permanent Marker", cursive; */
   margin: 1rem;
   padding: 1rem;
 }
@@ -429,8 +434,21 @@ body {
 }
 
 #topProduct{
+  color: rgba(0,0,0,0.2);
+  background: center / cover url('./balloon.jpg') no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: 'Playfair Display', serif;
+  font-size: larger;
+}
 
-  font-family: "Permanent Marker", cursive ;
+.balloon-background{
+  color: rgba(0,0,0,0.2);
+  background: center / cover url('./balloon.jpg') no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: 'Playfair Display', serif;
+  
 }
 
 .w-100{
