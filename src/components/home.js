@@ -1,7 +1,6 @@
 import React from "react";
 import ProductList from "./productList";
 import LandingCarousel from "./carousel"
-import SecondTitle from "./title"
 import BootstrapFooter from "./bootstrapFooter"
 
 export default function home() {
@@ -13,8 +12,15 @@ export default function home() {
           <span id="FlamaTitle"> Flama</span>
         </h1>
       </div>   
+
+      <div className="row">
+            <div className="col-10 mx-auto my-2 text-center text-title">
+                <h1 className="text-capitalize font-weight-bold balloon-background">
+                    About Flama
+                </h1>
+            </div>
+        </div>
       
-      <SecondTitle name="About" title="Flama" />
       <LandingCarousel />  
       <ProductList />
       <BootstrapFooter />
