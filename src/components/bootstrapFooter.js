@@ -33,6 +33,7 @@ export default function BootstrapFooter() {
   if (articleData !== null && articleData.data !== undefined) {
 
     console.log("Here's Article Data", articleData)
+    console.log("Here -----------------", articleData.data.articles[Math.floor(Math.random() * articleData.data.articles.length)].description)
 
     return (
       <>
