@@ -48,11 +48,9 @@ export default function BootstrapFooter() {
     let filteredResults = articleData.data.value.filter( eachArticle => {
         return eachArticle.image !== undefined
     })
-    console.log("Hey filtered results heere", filteredResults)
-
 
     console.log("Here's Article Data", articleData)
-    console.log("Here -----------------", articleData.data.value[Math.floor(Math.random() * articleData.data.value.length)])
+    console.log("Hey filtered results heere", filteredResults)
 
     return (
       <>
@@ -134,17 +132,17 @@ export default function BootstrapFooter() {
                 <FooterArticle
                   title={filteredResults[0].name}
                   text={filteredResults[0].description}
-                  url={filteredResults[0].image.thumbnail.contentURL}
+                  url={filteredResults[0].image.thumbnail.contentUrl}
                 />
                 <FooterArticle
                   title={filteredResults[1].name}
                   text={filteredResults[1].description}
-                  url={filteredResults[0].image.thumbnail.contentURL}
+                  url={filteredResults[1].image.thumbnail.contentUrl}
                 />
                 <FooterArticle
                   title={filteredResults[2].name}
                   text={filteredResults[2].description}
-                  url={filteredResults[0].image.thumbnail.contentURL}
+                  url={filteredResults[2].image.thumbnail.contentUrl}
                 />
               </div>
               <div className="col-lg-4">
