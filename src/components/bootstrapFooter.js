@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import FooterArticle from "./footerArticle";
 import axios from "axios";
 
 export default function BootstrapFooter() {
   const [articleData, setArticleData] = useState(null);
 
-  const getNews = () => {
+
+
+  const getNews = useCallback(() => {
     // Documentation at: https://newsapi.org/docs/endpoints/top-headlines
     const newsAPI =
       "https://newsapi.org/v2/top-headlines?category=health&country=us&apiKey=f8ae3578744f4e198d5632b34c90b58b";
@@ -14,15 +16,18 @@ export default function BootstrapFooter() {
       .then((result) => {
         console.log("Full Result", result);
         setArticleData(result);
-        console.log("Here's Article Data", articleData)
+        // console.log("Here's Article Data", articleData)
 
       })
       .catch((err) => console.log("Can’t access " + newsAPI, err));
-  };
+  }, [])
+
 
   useEffect(() => {
     getNews();
-  }, []);
+  }, [getNews]);
+
+  
 
 
   if (articleData !== null && articleData.data !== undefined) {
