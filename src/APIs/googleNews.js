@@ -1,4 +1,4 @@
-import NewsAPI from 'newsapi';
+const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('f8ae3578744f4e198d5632b34c90b58b');
 
 // To query /v2/top-headlines
