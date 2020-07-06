@@ -8,18 +8,31 @@ export default function BootstrapFooter() {
 
 
   const getNews = useCallback(() => {
-    // Documentation at: https://newsapi.org/docs/endpoints/top-headlines
-    const newsAPI =
-      "https://newsapi.org/v2/top-headlines?category=health&country=us&apiKey=f8ae3578744f4e198d5632b34c90b58b";
-    axios
-      .get(newsAPI)
-      .then((result) => {
-        console.log("Full Result", result);
-        setArticleData(result);
-        // console.log("Here's Article Data", articleData)
+    // Documentation at: https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1/endpoints
 
+    axios({
+      "method":"GET",
+      "url":"https://bing-news-search1.p.rapidapi.com/news/search",
+      "headers":{
+      "content-type":"application/octet-stream",
+      "x-rapidapi-host":"bing-news-search1.p.rapidapi.com",
+      "x-rapidapi-key":"5566489ac1mshfe14f7b0a8d9395p1426dcjsn66b2ca08e291",
+      "x-bingapis-sdk":"true",
+      "useQueryString":true
+      },"params":{
+      "freshness":"Day",
+      "textFormat":"Raw",
+      "safeSearch":"Off",
+      "q":"Aromatherapy"
+      }
       })
-      .catch((err) => console.log("Can’t access " + newsAPI, err));
+      .then((response)=>{
+        console.log("First response", response)
+        setArticleData(response);
+      })
+      .catch((error)=>{
+        console.log(error)
+      })
   }, [])
 
 
@@ -32,8 +45,14 @@ export default function BootstrapFooter() {
 
   if (articleData !== null && articleData.data !== undefined) {
 
+    let filteredResults = articleData.data.value.filter( eachArticle => {
+        return eachArticle.image !== undefined
+    })
+    console.log("Hey filtered results heere", filteredResults)
+
+
     console.log("Here's Article Data", articleData)
-    console.log("Here -----------------", articleData.data.articles[Math.floor(Math.random() * articleData.data.articles.length)].description)
+    console.log("Here -----------------", articleData.data.value[Math.floor(Math.random() * articleData.data.value.length)])
 
     return (
       <>
@@ -113,19 +132,19 @@ export default function BootstrapFooter() {
               <div className="col-lg-4 col-md-6">
                 <h3>Latest Articles</h3>
                 <FooterArticle
-                  title={articleData.data.articles[Math.floor(Math.random() * articleData.data.articles.length)].title}
-                  text={articleData.data.articles[Math.floor(Math.random() * articleData.data.articles.length)].description}
-                  url={articleData.data.articles[Math.floor(Math.random() * articleData.data.articles.length)].urlToImage}
+                  title={filteredResults[0].name}
+                  text={filteredResults[0].description}
+                  url={filteredResults[0].image.thumbnail.contentURL}
                 />
                 <FooterArticle
-                  title={articleData.data.articles[Math.floor(Math.random() * articleData.data.articles.length)].title}
-                  text={articleData.data.articles[Math.floor(Math.random() * articleData.data.articles.length)].description}
-                  url={articleData.data.articles[Math.floor(Math.random() * articleData.data.articles.length)].urlToImage}
+                  title={filteredResults[1].name}
+                  text={filteredResults[1].description}
+                  url={filteredResults[0].image.thumbnail.contentURL}
                 />
                 <FooterArticle
-                  title={articleData.data.articles[Math.floor(Math.random() * articleData.data.articles.length)].title}
-                  text={articleData.data.articles[Math.floor(Math.random() * articleData.data.articles.length)].description}
-                  url={articleData.data.articles[Math.floor(Math.random() * articleData.data.articles.length)].urlToImage}
+                  title={filteredResults[2].name}
+                  text={filteredResults[2].description}
+                  url={filteredResults[0].image.thumbnail.contentURL}
                 />
               </div>
               <div className="col-lg-4">

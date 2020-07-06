@@ -1,20 +1,3 @@
-// import React, { useState } from "react";
-// import { useSpring, animated } from "react-spring";
-
-// export default function title({text}) {
-//     return (
-//         <div className="row">
-//             <div className="col-10 mx-auto my-2 text-center text-title">
-//                 <h1 className="text-capitalize font-weight-bold balloon-background">
-//                     {text}
-//                 </h1>
-//             </div>
-//         </div>
-//     )
-// }
-
-// From https://stackoverflow.com/questions/56685305/how-to-create-moving-text-from-right-to-left-using-react-spring
-
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 
