@@ -1,15 +1,51 @@
-import React from 'react'
+// import React, { useState } from "react";
+// import { useSpring, animated } from "react-spring";
 
-export default function title({name, title}) {
-    return (
+// export default function title({text}) {
+//     return (
+//         <div className="row">
+//             <div className="col-10 mx-auto my-2 text-center text-title">
+//                 <h1 className="text-capitalize font-weight-bold balloon-background">
+//                     {text}
+//                 </h1>
+//             </div>
+//         </div>
+//     )
+// }
+
+// From https://stackoverflow.com/questions/56685305/how-to-create-moving-text-from-right-to-left-using-react-spring
+
+import React, { useState } from "react";
+import { useSpring, animated } from "react-spring";
+
+const Title = ({ text }) => {
+  const [key, setKey] = useState(1);
+
+  const scrolling = useSpring({
+    from: { transform: "translate(-60%,0)" },
+    to: { transform: "translate(60%,0)" },
+    config: { duration: 17000 },
+    reset: true,
+    // reverse: key % 2 == 0,
+    onRest: () => {
+      setKey(key + 1);
+    },
+  });
+
+  return (
+    <div key={key}>
+      <animated.div style={scrolling}>
         <div className="row">
-            <div className="col-10 mx-auto my-2 text-center text-title">
-                <h1 className="text-capitalize font-weight-bold balloon-background">
-                    {name}
-                    <br/>
-                    <strong className="text-orange balloon-background">{title}</strong>
-                </h1>
-            </div>
+          <div className="col-10 mx-auto my-2 text-center text-title">
+            <h1 className="text-capitalize font-weight-bold balloon-background">
+              {text}
+            </h1>
+          </div>
         </div>
-    )
-}
+      </animated.div>
+    </div>
+      );
+  
+};
+
+export default Title;

@@ -13,21 +13,21 @@ export default class Navbar extends Component {
             https://www.iconfinder.com/Makoto_msk  */}
         <Link to="">
           {/* <img src={Logo} alt="store" className="navbar brand"></img> */}
-          <div class="fire">
-            <div class="fire-left">
-              <div class="main-fire"></div>
-              <div class="particle-fire"></div>
+          <div className="fire">
+            <div className="fire-left">
+              <div className="main-fire"></div>
+              <div className="particle-fire"></div>
             </div>
-            <div class="fire-main">
-              <div class="main-fire"></div>
-              <div class="particle-fire"></div>
+            <div className="fire-main">
+              <div className="main-fire"></div>
+              <div className="particle-fire"></div>
             </div>
-            <div class="fire-right">
-              <div class="main-fire"></div>
-              <div class="particle-fire"></div>
+            <div className="fire-right">
+              <div className="main-fire"></div>
+              <div className="particle-fire"></div>
             </div>
-            <div class="fire-bottom">
-              <div class="main-fire"></div>
+            <div className="fire-bottom">
+              <div className="main-fire"></div>
             </div>
           </div>
           {" "}
