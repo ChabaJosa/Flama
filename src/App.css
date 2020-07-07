@@ -536,10 +536,9 @@ footer .copyright span {
   margin: 0 1rem !important;
 }
 
-.b-footer {
-  /* position: absolute;
-  bottom: 0;
-  width: 100%; */
+.b-footer-img {
+  width: 150px;
+  height: 100px!important
 }
 
 /* Social Media Icons Css Below */

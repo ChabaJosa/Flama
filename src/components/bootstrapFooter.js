@@ -4,60 +4,70 @@ import axios from "axios";
 
 export default function BootstrapFooter() {
   const [articleData, setArticleData] = useState(null);
-
-
+  const [Images, SetImages] = useState(null);
 
   const getNews = useCallback(() => {
     // Documentation at: https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1/endpoints
 
     axios({
-      "method":"GET",
-      "url":"https://bing-news-search1.p.rapidapi.com/news/search",
-      "headers":{
-      "content-type":"application/octet-stream",
-      "x-rapidapi-host":"bing-news-search1.p.rapidapi.com",
-      "x-rapidapi-key":"5566489ac1mshfe14f7b0a8d9395p1426dcjsn66b2ca08e291",
-      "x-bingapis-sdk":"true",
-      "useQueryString":true
-      },"params":{
-      "freshness":"Day",
-      "textFormat":"Raw",
-      "safeSearch":"Off",
-      "q":"Aromatherapy"
-      }
-      })
-      .then((response)=>{
-        console.log("First response", response)
+      method: "GET",
+      url: "https://bing-news-search1.p.rapidapi.com/news/search",
+      headers: {
+        "content-type": "application/octet-stream",
+        "x-rapidapi-host": "bing-news-search1.p.rapidapi.com",
+        "x-rapidapi-key": "5566489ac1mshfe14f7b0a8d9395p1426dcjsn66b2ca08e291",
+        "x-bingapis-sdk": "true",
+        useQueryString: true,
+      },
+      params: {
+        freshness: "Day",
+        textFormat: "Raw",
+        safeSearch: "Off",
+        q: "Aromatherapy",
+      },
+    })
+      .then((response) => {
+        console.log("First response", response);
         setArticleData(response);
       })
-      .catch((error)=>{
-        console.log(error)
-      })
-  }, [])
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
+  const getPics = useCallback(() => {
+    // Documentation: https://unsplash.com/oauth/applications/146767 process.env.REACT_APP_APP_ID
+    const API_KEY = process.env.REACT_APP_UNSPLASH;
+    const unsplash = `https://api.unsplash.com/photos/?client_id=${API_KEY}&page=1&q=candles`;
+    axios.get(unsplash).then((result) => {
+      console.log("Full Unsplash Result", result);
+      SetImages(result.data);
+    });
+  }, []);
 
   useEffect(() => {
     getNews();
-  }, [getNews]);
+    getPics();
+  }, [getNews, getPics]);
 
-  
+  if (
+    articleData !== null &&
+    articleData.data !== undefined &&
+    Images !== undefined
+  ) {
+    let filteredResults = articleData.data.value.filter((eachArticle) => {
+      return eachArticle.image !== undefined;
+    });
 
-
-  if (articleData !== null && articleData.data !== undefined) {
-
-    let filteredResults = articleData.data.value.filter( eachArticle => {
-        return eachArticle.image !== undefined
-    })
-
-    console.log("Here's Article Data", articleData)
-    console.log("Hey filtered results heere", filteredResults)
+    console.log("Here's Article Data", articleData);
+    console.log("Hey filtered results heere", filteredResults);
 
     return (
       <>
         <footer className="mt-1 b-footer">
           <div className="container">
             <div className="row">
-              <div className="col-lg-4 col-md-6">
+              <div className="col-lg-4 col-md-6" >
                 <h3>Site Map</h3>
                 <ul className="list-unstyled three-column">
                   <li>Home</li>
@@ -145,26 +155,26 @@ export default function BootstrapFooter() {
                   url={filteredResults[2].image.thumbnail.contentUrl}
                 />
               </div>
-              <div className="col-lg-4">
-                <h3>Candles of the Month</h3>
+              <div className="col-lg-4" >
+                  <h3>"Our Fav Pics of the day" </h3>
                 <img
-                  className="img-thumbnail"
-                  src="http://placehold.it/150x100"
+                  className="img-thumbnail b-footer-img" 
+                  src={ Images ? Images[0].urls.thumb : "http://placehold.it/150x100" }
                   alt=""
                 />
                 <img
-                  className="img-thumbnail"
-                  src="http://placehold.it/150x100"
+                  className="img-thumbnail b-footer-img" 
+                  src={ Images ? Images[0].urls.thumb : "http://placehold.it/150x100" }
                   alt=""
                 />
                 <img
-                  className="img-thumbnail"
-                  src="http://placehold.it/150x100"
+                  className="img-thumbnail b-footer-img" 
+                  src={ Images ? Images[0].urls.thumb : "http://placehold.it/150x100" }
                   alt=""
                 />
                 <img
-                  className="img-thumbnail"
-                  src="http://placehold.it/150x100"
+                  className="img-thumbnail b-footer-img" 
+                  src={ Images ? Images[0].urls.thumb : "http://placehold.it/150x100" }
                   alt=""
                 />
               </div>
