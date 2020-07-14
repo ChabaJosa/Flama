@@ -2,7 +2,7 @@
 
 # api keys
 .env
-.env.production
+.env.stagging
 
 # dependencies
 /node_modules
