@@ -273,6 +273,7 @@ h6 {
   flex-direction: column;
   justify-content: flex-end;
   align-items: self-start;
+  max-height: 25rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./balloon.jpg");
 }
@@ -440,6 +441,7 @@ h6 {
   background-clip: text;
   -webkit-background-clip: text;
   font-family: Bethania;
+  /* font-size: 7.5rem; */
 }
 
 .carousel{
