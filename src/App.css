@@ -8,8 +8,7 @@
 }
 
 /* @font-face {
-  font-family: Bethania;
-  src: url("./fonts/bethania/Bethania.ttf");
+font-family: "Playfair Display", serif;  src: url("./fonts/bethania/Bethania.ttf");
 } */
 
 body {
@@ -24,14 +23,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Bethania;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-style: italic;
 }
 
 .text-title {
-  font-family: "Permanent Marker", cursive;
-  letter-spacing: 0.3rem;
+  font-family: "Playfair Display", serif;
+    letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
 
@@ -344,7 +343,7 @@ h6 {
   }
 }
 
-.flamaLogo{
+.flamaLogo {
   height: 3rem;
   opacity: 0.95;
   animation: fadein 2s;
@@ -430,7 +429,7 @@ h6 {
   background: center / cover url("./balloon.jpg") no-repeat;
   background-clip: text;
   -webkit-background-clip: text;
-  font-family: Bethania;
+  font-family: "Playfair Display", serif;
   font-size: larger;
 }
 
@@ -440,12 +439,11 @@ h6 {
   background: center / cover url("./flamaBanner.png") no-repeat;
   background-clip: text;
   -webkit-background-clip: text;
-  font-family: Bethania;
-  /* font-size: 7.5rem; */
+  font-family: "Playfair Display", serif; /* font-size: 7.5rem; */
 }
 
-.carousel{
-  z-index: -1
+.carousel {
+  z-index: -1;
 }
 
 .carouselImage {
@@ -480,13 +478,12 @@ footer h3 {
   color: #0894d1;
   letter-spacing: 1px;
   margin: 30px 0 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
+  font-family: "Playfair Display", serif;  font-size: medium;
 }
 
 footer h4 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
+  font-family: "Playfair Display", serif;
+    font-size: medium;
 }
 
 footer .three-column {
@@ -540,7 +537,7 @@ footer .copyright span {
 
 .b-footer-img {
   width: 150px;
-  height: 100px!important
+  height: 100px !important;
 }
 
 /* Social Media Icons Css Below */
@@ -559,12 +556,12 @@ footer .copyright span {
 }
 
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 
@@ -579,7 +576,7 @@ footer .copyright span {
 }
 
 .fa-instagram {
-  background: #DD2A7B;
+  background: #dd2a7b;
   color: white;
 }
 
@@ -588,15 +585,14 @@ footer .copyright span {
   color: white;
 }
 
-.sm-div{
+.sm-div {
   padding: 0 15px;
   justify-content: space-between;
 }
 
 /* Css from bootstrap button pool */
 
-
-.productQualitities{
+.productQualitities {
   border-radius: 3px;
   background: var(--mainWhite);
   /* padding: 0.5rem; */
@@ -604,13 +600,13 @@ footer .copyright span {
   /* margin: 0.75rem; */
   height: fit-content;
   display: flex;
-  justify-content:  space-around;
-  Z-index: 3
+  justify-content: space-around;
+  z-index: 3;
 }
 
-.bootstrap-btn{
-  font-family: "Chivo", sans-serif;
-  font-size: 0.75rem !important;
+.bootstrap-btn {
+  font-family: "Playfair Display", serif;
+    font-size: 0.75rem !important;
 }
 
 #box {
@@ -623,7 +619,7 @@ footer .copyright span {
   margin-top: 1rem;
   /* height: 200px; */
   color: white;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 2.5rem;
 }
 
@@ -632,31 +628,40 @@ footer .copyright span {
   background: var(--mainWhite);
   position: relative;
   border-radius: var(--borderWidth);
-  Z-index: 0
+  z-index: 0;
 }
 .gradient-border:after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(-1 * var(--borderWidth));
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
 
-
 @keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
