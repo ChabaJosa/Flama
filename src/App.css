@@ -7,13 +7,13 @@
   --mainYellow: #ff7800;
 }
 
-@font-face {
+/* @font-face {
   font-family: Bethania;
   src: url("./fonts/bethania/Bethania.ttf");
-}
+} */
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   background: var(--mainWhite) !important;
 }
@@ -437,7 +437,7 @@ h6 {
 .balloon-background {
   animation: fadein 3s;
   color: rgba(0, 0, 0, 0.2);
-  background: center / cover url("./balloon.jpg") no-repeat;
+  background: center / cover url("./flamaBanner.png") no-repeat;
   background-clip: text;
   -webkit-background-clip: text;
   font-family: Bethania;
