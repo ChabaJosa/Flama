@@ -69,76 +69,7 @@ export default function BootstrapFooter() {
         <footer className="mt-1 b-footer">
           <div className="container">
             <div className="row">
-              <div className="col-lg-4 col-md-6">
-                <h3>Site Map</h3>
-                <ul className="list-unstyled three-column">
-                  <li>Home</li>
-                  <li>Products</li>
-                  <li>About</li>
-                  {/* <li>Code</li>
-                <li>Design</li>
-                <li>Host</li>
-                <li>Contact</li>
-                <li>Company</li> */}
-                </ul>
-                <div className="row sm-div">
-                  <a
-                    href="Facebook.com"
-                    className="fa fa-facebook"
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => {
-                      window.open("Facebook.com", "_blank");
-                    }}
-                  >
-                    <span></span>
-                  </a>
-                  <a
-                    href="Twitter.com"
-                    className="fa fa-twitter"
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => {
-                      window.open("Twitter.com", "_blank");
-                    }}
-                  >
-                    <span></span>
-                  </a>
-                  <a
-                    href="Pinterest.com"
-                    className="fa fa-pinterest"
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => {
-                      window.open("Pinterest.com", "_blank");
-                    }}
-                  >
-                    <span></span>
-                  </a>
-                  <a
-                    href="LinkedIn.com"
-                    className="fa fa-linkedin"
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => {
-                      window.open("LinkedIn.com", "_blank");
-                    }}
-                  >
-                    <span></span>
-                  </a>
-                  <a
-                    href="Instagram.com"
-                    className="fa fa-instagram"
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => {
-                      window.open("Instagram.com", "_blank");
-                    }}
-                  >
-                    <span></span>
-                  </a>
-                </div>
-              </div>
+              
               <div className="col-lg-4 col-md-6">
                 <h3>Latest Articles</h3>
                 <FooterArticle
@@ -197,6 +128,61 @@ export default function BootstrapFooter() {
                   alt=""
                 />
               </div>
+              <div className="col-lg-4 col-md-6">
+                <h3>Follow us on Social Media</h3>
+                {/* <ul className="list-unstyled three-column"> */}
+                  {/* <li>Home</li>
+                  <li>Products</li>
+                  <li>About</li> */}
+                  {/* <li>Code</li>
+                <li>Design</li>
+                <li>Host</li>
+                <li>Contact</li>
+                <li>Company</li> */}
+                {/* </ul> */}
+                <div className="row sm-div">
+                  <a
+                    href="https://www.facebook.com/"
+                    className="fa fa-facebook"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span></span>
+                  </a>
+                  <a
+                    href="https://www.Twitter.com/"
+                    className="fa fa-twitter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span></span>
+                  </a>
+                  <a
+                    href="https://www.Pinterest.com"
+                    className="fa fa-pinterest"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span></span>
+                  </a>
+                  <a
+                    href="https://www.LinkedIn.com"
+                    className="fa fa-linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span></span>
+                  </a>
+                  <a
+                    href="https://www.Instagram.com"
+                    className="fa fa-instagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span></span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <div className="copyright text-center">
@@ -228,10 +214,7 @@ export default function BootstrapFooter() {
                     href="Facebook.com"
                     className="fa fa-facebook"
                     target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => {
-                      window.open("Facebook.com", "_blank");
-                    }}
+                    rel="noopener noreferrer"
                   >
                     <span></span>
                   </a>
@@ -239,10 +222,7 @@ export default function BootstrapFooter() {
                     href="Twitter.com"
                     className="fa fa-twitter"
                     target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => {
-                      window.open("Twitter.com", "_blank");
-                    }}
+                    rel="noopener noreferrer"
                   >
                     <span></span>
                   </a>
@@ -250,10 +230,7 @@ export default function BootstrapFooter() {
                     href="Pinterest.com"
                     className="fa fa-pinterest"
                     target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => {
-                      window.open("Pinterest.com", "_blank");
-                    }}
+                    rel="noopener noreferrer"
                   >
                     <span></span>
                   </a>
@@ -261,10 +238,7 @@ export default function BootstrapFooter() {
                     href="LinkedIn.com"
                     className="fa fa-linkedin"
                     target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => {
-                      window.open("LinkedIn.com", "_blank");
-                    }}
+                    rel="noopener noreferrer"
                   >
                     <span></span>
                   </a>
@@ -272,10 +246,7 @@ export default function BootstrapFooter() {
                     href="Instagram.com"
                     className="fa fa-instagram"
                     target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => {
-                      window.open("Instagram.com", "_blank");
-                    }}
+                    rel="noopener noreferrer"
                   >
                     <span></span>
                   </a>
