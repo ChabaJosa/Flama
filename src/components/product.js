@@ -75,8 +75,8 @@ const ProductWrapper = styled.div`
     .card{
         border-color: transparent;
         transition: all 0.5s linear;
-        height: 30rem;
-        max-height: 90vw;
+        height: 25rem;
+        max-height: 70vw;
     }
     .card-footer{
         background: transparent;
