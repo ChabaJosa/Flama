@@ -228,15 +228,6 @@ export default function BootstrapFooter() {
                     }
                     alt=""
                   />
-                  <img
-                    className="img-thumbnail b-footer-img"
-                    src={
-                      Images
-                        ? Images[3].urls.thumb
-                        : "http://placehold.it/150x100"
-                    }
-                    alt=""
-                  />
                 </div>
               </div>
             </div>
