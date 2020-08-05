@@ -299,8 +299,8 @@ h6 {
   color: var(--mainWhite);
   text-align: center;
   font-size: 4em;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0 1rem;
+  padding: 0 1rem;
 }
 
 .titleAnimation {
