@@ -7,9 +7,10 @@
   --mainYellow: #ff7800;
 }
 
-/* @font-face {
-font-family: "Playfair Display", serif;  src: url("./fonts/bethania/Bethania.ttf");
-} */
+@font-face {
+  font-family: Bethania;
+  src: url("./fonts/bethania/Bethania.ttf");
+}
 
 body {
   font-family: "Playfair Display", serif;
@@ -30,7 +31,7 @@ h6 {
 
 .text-title {
   font-family: "Playfair Display", serif;
-    letter-spacing: 0.3rem;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
 
@@ -274,14 +275,30 @@ h6 {
   align-items: self-start;
   max-height: 25rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./flamaBanner.png");
+    url("./flammaBanner.png");
+}
+
+#flammaTitle {
+  background-image: -webkit-linear-gradient(top, #111, #0c0c0c);
+  background-image: -moz-linear-gradient(top, #111, #0c0c0c);
+  background-image: -ms-linear-gradient(top, #111, #0c0c0c);
+  background-image: -o-linear-gradient(top, #111, #0c0c0c);
+  line-height: 1.4em;
+  font-family: Bethania;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.3em;
+  white-space: nowrap;
+  animation: fireAnimation 1s ease-in-out infinite alternate;
+  -moz-animation: fireAnimation 1s ease-in-out infinite alternate;
+  -webkit-animation: fireAnimation 1s ease-in-out infinite alternate;
+  -o-animation: fireAnimation 1s ease-in-out infinite alternate;
+  -webkit-perspective: 1000;
 }
 
 .titleText {
   color: var(--mainWhite);
   text-align: center;
   font-size: 4em;
-  /* font-family: "Permanent Marker", cursive; */
   margin: 1rem;
   padding: 1rem;
 }
@@ -343,27 +360,10 @@ h6 {
   }
 }
 
-.flamaLogo {
+.flammaLogo {
   height: 3rem;
   opacity: 0.95;
   animation: fadein 2s;
-}
-
-#FlamaTitle {
-  background-image: -webkit-linear-gradient(top, #111, #0c0c0c);
-  background-image: -moz-linear-gradient(top, #111, #0c0c0c);
-  background-image: -ms-linear-gradient(top, #111, #0c0c0c);
-  background-image: -o-linear-gradient(top, #111, #0c0c0c);
-  line-height: 1.4em;
-  text-transform: uppercase;
-  letter-spacing: 0.3em;
-  white-space: nowrap;
-  animation: fireAnimation 1s ease-in-out infinite alternate;
-  -moz-animation: fireAnimation 1s ease-in-out infinite alternate;
-  -webkit-animation: fireAnimation 1s ease-in-out infinite alternate;
-  -o-animation: fireAnimation 1s ease-in-out infinite alternate;
-  -webkit-perspective: 1000;
-  /* -webkit-backface-visibility: hidden; */
 }
 
 @keyframes fireAnimation {
@@ -437,14 +437,14 @@ h6 {
 .balloon-background {
   animation: fadein 3s;
   color: rgba(0, 0, 0, 0.2);
-  background: center / cover url("./flamaBanner.png") no-repeat;
+  background: center / cover url("./flammaBanner.png") no-repeat;
   background-clip: text;
   -webkit-background-clip: text;
   font-family: "Playfair Display", serif; /* font-size: 7.5rem; */
 }
 
-.coral-background{
-  background-color: #EDC9AF
+.coral-background {
+  background-color: #edc9af;
 }
 
 .carousel {
@@ -483,12 +483,13 @@ footer h3 {
   color: #0894d1;
   letter-spacing: 1px;
   margin: 30px 0 20px;
-  font-family: "Playfair Display", serif;  font-size: medium;
+  font-family: "Playfair Display", serif;
+  font-size: medium;
 }
 
 footer h4 {
   font-family: "Playfair Display", serif;
-    font-size: medium;
+  font-size: medium;
 }
 
 footer .three-column {
@@ -611,7 +612,7 @@ footer .copyright span {
 
 .bootstrap-btn {
   font-family: "Playfair Display", serif;
-    font-size: 0.75rem !important;
+  font-size: 0.75rem !important;
 }
 
 #box {

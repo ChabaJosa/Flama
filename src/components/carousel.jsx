@@ -25,7 +25,7 @@ export default function LandingCarousel() {
           </div>
           <Carousel.Caption>
             <h3>First thing</h3>
-            <p>Flama stands for this</p>
+            <p>flamma stands for this</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -39,7 +39,7 @@ export default function LandingCarousel() {
 
           <Carousel.Caption>
             <h3>Second thing</h3>
-            <p>Flama stands for this</p>
+            <p>flamma stands for this</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -53,7 +53,7 @@ export default function LandingCarousel() {
 
           <Carousel.Caption>
             <h3>Third thing</h3>
-            <p>Flama stands for this</p>
+            <p>flamma stands for this</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

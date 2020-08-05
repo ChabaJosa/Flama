@@ -186,7 +186,7 @@ export default function BootstrapFooter() {
               </div>
             </div>
             <div className="copyright text-center">
-              Copyright © 2020 <span>Flama</span>
+              Copyright © 2020 <span>flamma</span>
             </div>
           </footer>
         </>
@@ -232,7 +232,7 @@ export default function BootstrapFooter() {
               </div>
             </div>
             <div className="copyright text-center">
-              Copyright © 2020 <span>Flama</span>
+              Copyright © 2020 <span>flamma</span>
             </div>
           </footer>
         </>

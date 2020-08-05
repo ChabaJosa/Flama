@@ -19,13 +19,13 @@ function App() {
     <>
       <MetaTags>
         <title>
-          Flama
+          flamma
         </title>
-        <meta property="og:url" content="https://flamacandels.netlify.com" />
+        <meta property="og:url" content="https://flammacandels.netlify.com" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Flama - Enlighten your life"
+          content="flamma - Enlighten your life"
         />
         <meta
           property="og:description"
@@ -36,12 +36,12 @@ function App() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:site"
-          content="https://flamacandels.netlify.com"
+          content="https://flammacandels.netlify.com"
         />
         <meta name="twitter:creator" content="Carlos Hernandez" />
         <meta
           name="twitter:title"
-          content="Flama - Enlighten your life"
+          content="flamma - Enlighten your life"
         />
         <meta
           name="twitter:description"

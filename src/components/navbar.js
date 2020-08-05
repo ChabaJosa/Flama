@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../Flama.png";
+import Logo from "../flamma.png";
 import styled from "styled-components";
 import { ButtonContainer } from "./button";
 
@@ -13,7 +13,7 @@ export default class Navbar extends Component {
             https://www.iconfinder.com/Makoto_msk  */}
         <Link to="">
           <div>
-            <img alt="logo" src={Logo} className="flamaLogo" />
+            <img alt="logo" src={Logo} className="flammaLogo" />
           </div>
         </Link>
         <Link to="">
