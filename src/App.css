@@ -451,6 +451,11 @@ h6 {
   z-index: -1;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: var(--mainDark);
+}
+
 .carouselImage {
   /* -webkit-text-stroke: 1px black; */
   /* -webkit-filter: blur(2px); 
@@ -671,3 +676,14 @@ footer .copyright span {
     background-position: 0% 50%;
   }
 }
+
+.reviews {
+  min-height: 20rem;
+  justify-content: center;
+
+}
+
+.carousel-inner {
+  max-width: 40vw;
+}
+

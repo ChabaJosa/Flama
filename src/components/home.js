@@ -2,7 +2,8 @@ import React from "react";
 import ProductList from "./productList";
 import LandingCarousel from "./carousel"
 import BootstrapFooter from "./bootstrapFooter"
-// import SecondaryTitle from "./title"
+import Reviews from "./reviews"
+
 
 export default function home() {
   return (
@@ -23,6 +24,7 @@ export default function home() {
         </div>
       <LandingCarousel />  
       <ProductList />
+      <Reviews />
       <BootstrapFooter />
 
     </>

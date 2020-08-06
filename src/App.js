@@ -9,8 +9,6 @@ import DefaultScreen from "./components/defaultScreen";
 import Modal from "./components/modal";
 import Home from "./components/home";
 
-// import BootstrapFooter            from "./components/bootstrapFooter"
-
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -19,7 +17,7 @@ function App() {
     <>
       <MetaTags>
         <title>
-          flamma
+          Flamma Store
         </title>
         <meta property="og:url" content="https://flammacandels.netlify.com" />
         <meta property="og:type" content="website" />
