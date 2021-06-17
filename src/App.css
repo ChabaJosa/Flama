@@ -680,10 +680,11 @@ footer .copyright span {
 .reviews {
   min-height: 20rem;
   justify-content: center;
-
 }
 
-.carousel-inner {
-  max-width: 40vw;
+/* // Darken Gradient on mobile */
+@media only screen and (max-width: 600px) {
+  .carousel-inner {
+    max-width: 40vw;
+  }
 }
-
